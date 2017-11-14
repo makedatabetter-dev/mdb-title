@@ -77,7 +77,7 @@ Custom property | Description | Default
       </h6>
     </template>
     <template is="dom-if" if="{{helpText}}">
-      <mdb-help-text help-text="{{helpText}}"></mdb-help-text>
+      <mdb-help-text help-text="{{helpText}}" position="{{helpTextPosition}}"></mdb-help-text>
     </template>
   </template>
 
@@ -103,6 +103,11 @@ Custom property | Description | Default
         helpText: {
           type: String,
           value: ''
+        },
+
+        helpTextPosition: {
+          type: String,
+          value: 'right'
         }
       },
 
