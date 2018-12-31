@@ -78,7 +78,7 @@ Custom property | Description | Default
       </h6>
     </template>
     <template is="dom-if" if="{{helpText}}">
-      <mdb-help-text help-text="{{helpText}}" position="{{helpTextPosition}}"></mdb-help-text>
+      <mdb-help-text help-text="{{helpText}}" position="{{helpTextPosition}}" skip-bounds-check='[[skipBoundsCheck]]'></mdb-help-text>
     </template>
   </template>
 
@@ -109,6 +109,11 @@ Custom property | Description | Default
         helpTextPosition: {
           type: String,
           value: 'right'
+        },
+
+        skipBoundsCheck: {
+          type: Boolean,
+          value: false
         }
       },
 
